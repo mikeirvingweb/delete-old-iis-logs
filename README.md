@@ -4,7 +4,7 @@ A simple Batch File to Delete IIS Logs older than 7 days on Windows Server.
 
 ### Installation
 
-➕ Alter the script file to set your correct *IIS Logs Folder* and *number of days* you'd like to delete beyond (default 7).
+➕ Alter the `delete-old-iis-logs.bat` script file to set your correct *IIS Logs Folder* and *number of days* you'd like to delete beyond (default 7).
 
 forfiles /p `"C:\inetpub\logs\LogFiles"` /s /m *.* /c "cmd /c Del @path" /d -`7`
 
